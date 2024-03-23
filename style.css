@@ -73,7 +73,7 @@ nav > a{
 #city{
     height:40px;
     width: 500px;
-    border: none;
+    border: 1px solid black;
 }
 
 #btn{
@@ -287,9 +287,9 @@ svg{
         padding:30px 40px;
     }
     #city{
-        height:30px;
+        height:25px;
         width: 150px;
-        border: none;
+        border: 1px solid black;
         font-size: 0.7em;
     }
 
