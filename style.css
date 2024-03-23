@@ -70,6 +70,11 @@ nav > a{
     background-color: #f5f6fe;
     padding:30px 40px;
 }
+#city{
+    height:40px;
+    width: 500px;
+    border: none;
+}
 
 #btn{
     padding: 15px 30px;
@@ -188,6 +193,9 @@ svg{
     strong{
         color: orangered;
     }
+    h3{
+        font-family: 'Courier New', Courier, monospace;
+    }
     
 }
 #min{
@@ -196,9 +204,11 @@ svg{
 
 
 @media  (max-width : 600px) {
+   
     #beauty-img{
         height:150px; /* Ensure the image doesn't exceed the screen width */
         text-align: center;
+        margin:20px 0;
     
         
     }
@@ -237,6 +247,7 @@ svg{
         align-items: center;
         text-align: center;
         height: 5px;
+        margin: 40px 0px 0px 0px;
         padding: 12px;
         a img{
            height:18px;
@@ -267,13 +278,19 @@ svg{
 
 
     .input-div{
-        margin: 20px auto;
+        margin: 30px auto;
         font-size: 1rem;
         font-weight: 500 !important;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center !important;
         background-color: #f5f6fe;
         padding:30px 40px;
+    }
+    #city{
+        height:30px;
+        width: 150px;
+        border: none;
+        font-size: 0.7em;
     }
 
     header{
@@ -375,6 +392,7 @@ svg{
         h3{
             font-size: 0.9em;
             font-weight: 100;
+            font-family:'Courier New', Courier, monospace;
         }
         
     }
