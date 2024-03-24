@@ -8,6 +8,8 @@ let a=document.getElementById("btn");
 a.addEventListener('click',getWeather);
 
 function getWeather(){
+    const parent=document.getElementById("parent");
+    parent.innerHTML="";
     let inputCity=document.getElementById( "city" ).value;
     if(inputCity==''){
         alert('Please Enter a valid Location');
