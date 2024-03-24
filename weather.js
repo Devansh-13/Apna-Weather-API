@@ -32,10 +32,12 @@ function renderUI(data){
     
     const parent=document.getElementById("parent");
     parent.classList.add("root");
+
     data.days.forEach((item) => {
         const divEle=document.createElement("div");
         // date
         divEle.setAttribute("class","child");
+        
         const h2=document.createElement('h2');
         let newDate =new Date(item.datetime);
         const options={
@@ -65,6 +67,22 @@ function renderUI(data){
 
 
     });
+    const root = document.getElementById('parent');
+    const children = root.querySelectorAll('.child');
+    children.forEach(item=>{
+        item.addEventListener("mouseenter",()=>{
+            children.forEach(other=>{
+                if(other!==item){
+                    other.classList.add("filter");
+                }
+            })
+        })
+        item.addEventListener("mouseleave",()=>{
+            children.forEach(other=>{
+                other.classList.remove("filter");
+            })
+        })
+    })
 }
 
 
